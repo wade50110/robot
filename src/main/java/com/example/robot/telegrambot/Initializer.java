@@ -12,7 +12,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 public class Initializer {
 
     @Resource
-    BotTowServiceImpl botTowService;
+    LeoRobot botTowService;
 
     @EventListener({ContextClosedEvent.class})
     public void init() throws TelegramApiException {

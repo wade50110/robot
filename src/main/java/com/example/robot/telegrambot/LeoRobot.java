@@ -1,16 +1,15 @@
 package com.example.robot.telegrambot;
 
-import com.example.robot.config.BotConfig;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-@Service
-public class BotTowServiceImpl extends TelegramLongPollingBot {
+@Component
+public class LeoRobot extends TelegramLongPollingBot {
 
     @Value("${telegram.bot.username}")
     public String botUsername;

@@ -14,7 +14,7 @@ public class TestController {
     @Resource
     private DefaultBotOptions defaultBotOptions;
     @Resource
-    private BotTowServiceImpl botTowService;
+    private LeoRobot botTowService;
 
     @GetMapping("test")
     public String test() {
